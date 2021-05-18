@@ -1,0 +1,18 @@
+.header_item {
+	flex: 0 1 auto;
+	margin-right: 10px;
+}
+
+.search_container {
+	border-color: rgb(223, 225, 230);
+	border-radius: 3px;
+	border-style: solid;
+	flex: 1 0 auto;
+	overflow: hidden;
+	transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+	border-width: 2px;
+
+	&:hover {
+		border-color: rgb(76, 154, 255);
+	}
+}

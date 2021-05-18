@@ -1,0 +1,162 @@
+.create__tag {
+	width: 550px !important;
+	top: 100px;
+}
+.conversation__tags {
+    //width: 100%;
+    margin: 0 auto;
+	padding: 0 2.5rem;
+    height: 27px;
+	box-sizing: border-box;
+	.tag_action::before {
+		font-size: 16px;
+	}
+}
+
+.tag_action_btn {
+	width: 32px !important;
+	height: 27px !important;
+	box-sizing: border-box;
+}
+
+.tag_action_selected {
+	background: #e8e8e8 !important;
+	color: #2c2d30 !important;
+}
+
+.fold_corner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 4px;
+	height: 4px;
+	background-color: transparent;
+}
+
+.fold_corner_triangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 4px 4px 0;
+	border-color: transparent currentColor transparent transparent;
+}
+
+.tags__bar {
+	width: 100%;
+	height: 27px;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+}
+
+.tag_item {
+	border-right: 1px solid #e8e8e8 !important;
+
+	&.actived_edit_mode {
+		border-style: dotted !important;
+	}
+}
+
+.actions {
+	display: flex;
+	flex-direction: row;
+	width: 100px;
+}
+
+.more_tag_icon::before {
+	font-size: 16px;
+}
+
+.more_tags__dropdown {
+	//box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+	background-color: #fff;
+	//padding: 16px;
+	border-radius: 6px;
+	pointer-events: auto;
+	min-width: 150px;
+}
+.more_tag_list {
+	//padding: 5px 10px;
+}
+
+.setting_menu_check_icon_holder {
+	width: 22px;
+}
+
+.tag_notification_container {
+	bottom: 100%;
+	background: rgba( 0, 0, 0, 0.6 );
+	color: #fff;
+	padding: 5px 15px;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	animation:fadeIn 0.25s linear;
+}
+
+.empty_tag_txt {
+	font-size: 13px;
+	line-height: 27px;
+	height: 27px;
+	//line-height: 26px;
+	//margin-left: 5px;
+	color: #646464;
+}
+
+.more_tags_item {
+	//padding: 0 20px 0 10px;
+}
+
+#new_tag {
+	padding-left: 10px;
+}
+
+.tag__btn {
+    // margin-right: 2px !important;
+    font-weight: 900 !important;
+    font-size: 12px !important;
+    color: #999 !important;
+	padding: 3px 8px !important;
+	white-space:nowrap;
+
+    &.selected {
+		color: #2c2d30 !important;
+        font-weight: 900 !important;
+    }
+
+
+	.ts_icon {
+		&::before {
+		    font-size: 18px;
+		    line-height: 5px;
+		    margin: 0;
+		    vertical-align: baseline;
+		}
+	}
+}
+
+.color__picker {
+	display: flex;
+    /* width: 100%; */
+    margin: 0 auto;
+    padding: 0 30px 30px;
+
+    .circle-picker {
+    	flex: auto;
+    }
+
+    .p-jumper__help {
+    	display: flex;
+    }
+}
+
+.tag__options {
+	padding: 0 30px;
+}
+
+.create__tag {
+	.p-jumper__help {
+		display: flex;
+	    justify-content: flex-end;
+	}
+}

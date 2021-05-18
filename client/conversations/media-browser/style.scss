@@ -1,0 +1,163 @@
+.mainLoaderWrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.media_browser_container {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	transition: width 0.25s ease-out;
+}
+
+.filter_bar_container {
+	height: 60px;
+	padding: 0 15px;
+	background: #1264a3;
+	box-shadow: 0 1px 0 rgba( 0, 0, 0, 0.10196078 );
+	display: flex;
+	align-items: center;
+}
+
+.pages_list_container {
+	position: absolute;
+	box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.07), 0px 3px 20px 0px rgba(0, 0, 0, 0.25);
+	border-radius: 6px;
+	max-width: 290px;
+	z-index: 10;
+}
+
+.page_filter_container {
+	min-width: 250px;
+	max-width: 500px;
+	width: auto;
+	border-radius: 3px;
+	margin: 0 10px 0 0;
+	padding-right: 40px;
+	position: relative;
+	height: 36px;
+	background: #fff;
+	z-index: 2;
+}
+
+.page_filter_list_container {
+	max-width: 290px;
+	overflow: hidden;
+	background-color: transparent !important;
+}
+
+.page__img {
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+	background: #eee;
+}
+
+.token_field__token_text {
+	display: flex;
+	align-items: center;
+}
+
+.search_container {
+	position: absolute !important;
+	right: 102px;
+	top: 15px;
+	transition: right 0.2s;
+
+	.search_input_container {
+		width: 200px;
+		transition: width 0.2s;
+	}
+
+	&.search_focus {
+		right: 15px;
+
+		.search_input_container {
+			width: 400px;
+		}
+	}
+
+}
+
+.token_field__remove_token {
+	//position: absolute;
+	margin-top: -10px !important;
+}
+
+.page_input_container {
+	border-radius: 3px;
+	/* background: #eeee; */
+	/* box-shadow: inset 0 1px 1px rgba(0,0,0,.075); */
+	border: 1px solid #ddd;
+}
+
+.toolbar_container {
+	height: 40px;
+	//background-color: #f2f5fa;
+	//border-bottom: 1px solid #dcdcdc;
+	padding: 5px 15px 5px 0;
+	display: flex;
+	align-items: center;
+}
+
+.view_types_buttons {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	opacity: 1;
+	transition: opacity 0.1s;
+
+	&.search_focus {
+		opacity: 0;
+	}
+}
+
+.view_types_button {
+	margin: 0 10px 0 0 !important;
+	height: 32px !important;
+	width: 32px;
+	color: #fff !important;
+	border-radius: 3px !important;
+	//background: red !important;
+	padding: 5px !important;
+
+	&.active {
+		background: rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+.media_library__scale {
+	width: 150px;
+}
+.media-library__upload-button {
+	position: relative;
+	display: inline-block;
+}
+
+.media-library__upload-button-input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	cursor: pointer;
+
+	&::-webkit-file-upload-button {
+		cursor: pointer; /* webkit needs this to change cursor for file type input. */
+	}
+}
+
+@include breakpoint( "<480px" ) {
+	.media-library__upload-button {
+		margin-left: 0;
+	}
+}
+
+

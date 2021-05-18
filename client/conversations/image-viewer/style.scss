@@ -1,0 +1,19 @@
+.image_viewer_body {
+	color: #fff;
+	overflow: hidden;
+}
+
+.image_viewer_body_overlay {
+	color: #fff;
+	background-color: rgba( 0, 0, 0, 0.85 );
+	opacity: 1;
+
+	.c-fullscreen_modal__title {
+		color: #fff !important;
+	}
+}
+
+.image_viewer_header {
+	color: #fff;
+	background: linear-gradient( to bottom, rgba( 0, 0, 0, 0.65 ) 0%, transparent 100% );
+}

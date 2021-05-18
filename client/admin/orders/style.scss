@@ -1,0 +1,25 @@
+@import './header/style.scss';
+
+.layout__content {
+	height: 100%;
+}
+
+.right_side_bar {
+	width: 449px;
+	height: 100%;
+	position: fixed;
+	right: 0px;
+	top: 47px;
+	//padding: 12px;
+	background-color: rgb(244, 245, 247);
+}
+
+.order_list_header {
+	height: 60px;
+	border-bottom: 2px solid #DFE1E6;
+	padding: 0 15px;
+}
+
+.list_container {
+	//padding-left: 30px;
+}

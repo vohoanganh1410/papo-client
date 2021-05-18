@@ -1,0 +1,143 @@
+.p-message_pane .p-message_pane__top_banners {
+	z-index: 201;
+	position: absolute;
+	top: 54px;
+	left: 0;
+	right: 0;
+	display: flex
+}
+
+.p-message_pane__unread_banner {
+	display: flex;
+	flex: 1;
+	background: #29b2ee;
+	border-radius: 0px;
+	color: #fff;
+	z-index: 200
+}
+
+.p-message_pane__unread_banner__banner {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	min-width: 0;
+	cursor: pointer;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px
+}
+
+.p-message_pane__unread_banner__banner:hover {
+	background: #3d9cd4
+}
+
+.p-message_pane__unread_banner__close,
+.p-message_pane__unread_banner__jump,
+.p-message_pane__unread_banner__msg {
+	height: 100%;
+	padding-left: 10px;
+	padding-right: 10px
+}
+
+.p-message_pane__unread_banner__msg {
+	flex: 1;
+	text-align: center;
+	text-shadow: 0 1px rgba(0, 0, 0, .15);
+	font-weight: 900;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.p-message_pane__unread_banner__jump {
+	font-weight: 700;
+	text-shadow: 0 1px rgba(0, 0, 0, .15);
+	font-weight: 900
+}
+
+.p-message_pane__unread_banner__jump__arrow {
+	line-height: 1em
+}
+
+.p-message_pane__unread_banner__close {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	font-weight: 700;
+	text-shadow: 0 1px rgba(0, 0, 0, .15)
+}
+
+.p-message_pane__unread_banner__close:hover {
+	background: #3d9cd4
+}
+
+#client-ui.flex_pane_showing .p-message_pane__unread_banner__close__label {
+	display: none;
+	padding: 5px 10px
+}
+
+.p-message_pane__briefings_back_button {
+	border-radius: 6px;
+	margin-right: 8px
+}
+
+.p-message_pane__briefings_back_button_icon {
+	transform: scale(1.5)
+}
+
+.p-message_pane__unread_banner__close--detached {
+	background: #29b2ee;
+	border-left: 1px solid #3d9cd4
+}
+
+.p-message_pane__unread_banner__close__icon {
+	line-height: 1em
+}
+// .c-button-unstyled {
+// 	background: none;
+// 	border: 0;
+// 	color: inherit;
+// 	font: inherit;
+// 	margin: 0;
+// 	line-height: inherit;
+// 	overflow: initial;
+// 	padding: 0;
+// 	text-align: initial;
+// 	vertical-align: initial;
+// 	cursor: pointer
+// }
+
+// .c-button-unstyled:active,
+// .c-button-unstyled:focus,
+// .c-button-unstyled:hover {
+// 	outline: none
+// }
+
+.p-message_pane__banner, .p-message_pane__briefings_back_button {
+    font-size: 10pt;
+    height: 26px;
+}
+
+.p-message_pane__unread_banner__close, .p-message_pane__unread_banner__jump, .p-message_pane__unread_banner__msg {
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.p-message_pane__unread_banner__jump {
+    font-weight: 700;
+    text-shadow: 0 1px rgba(0,0,0,.15);
+    font-weight: 900;
+}
+
+.p-message_pane__unread_banner__close--detached {
+    background: #29b2ee;
+    border-left: 1px solid #3d9cd4;
+}
+
+.p-message_pane__unread_banner__close {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-weight: 700;
+    text-shadow: 0 1px rgba(0,0,0,.15);
+}
+
+

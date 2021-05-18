@@ -1,0 +1,17 @@
+/** @format */
+
+export const actions = {
+	AUTH_LOGIN: 'AUTH_LOGIN',
+	RECEIVE_AUTH_LOGIN: 'RECEIVE_AUTH_LOGIN',
+	OAUTH_LOGIN: 'OAUTH_LOGIN',
+	RECEIVE_OAUTH_LOGIN: 'RECEIVE_OAUTH_LOGIN',
+	AUTH_RESET: 'AUTH_RESET',
+	AUTH_LOGOUT: 'AUTH_LOGOUT',
+	USER_RECEIVE: 'USER_RECEIVE',
+};
+
+export const errors = {
+	ERROR_REQUIRES_2FA: 'needs_2fa', // From WP.com API
+	ERROR_INVALID_OTP: 'invalid_otp', // From WP.com API
+};
+

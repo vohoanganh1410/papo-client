@@ -1,0 +1,279 @@
+.team_picker {
+	width: 100%;
+	height: 45px;
+	//padding-left: 15px;
+	border-bottom: 1px solid #e9e9e9;
+	cursor: pointer;
+}
+.chevron_icon {
+	width: 25px;
+}
+.current_team_name {
+	line-height: 45px;
+	font-size: 16px;
+	font-weight: 700;
+	color: rgb(66, 82, 110);
+}
+
+/**
+ * Site
+ *
+ */
+
+.team {
+	box-sizing: border-box;
+	display: flex;
+	flex: 1 0 auto;
+	justify-content: space-between;
+	padding: 0;
+	position: relative;
+
+	&.is-loading {
+		pointer-events: none;
+
+		.site-icon {
+			animation: pulse-light 0.8s ease-in-out infinite;
+		}
+
+		.team__title,
+		.team_description {
+			animation: pulse-light 0.8s ease-in-out infinite;
+			background-color: var( --color-neutral-0 );
+			color: transparent;
+			width: 95%;
+
+			&::after {
+				display: none;
+			}
+		}
+
+		.notouch .sites-popover &:hover {
+			.team__title,
+			.team_description {
+				color: transparent;
+			}
+		}
+	}
+
+	&.is-compact {
+		.team__content {
+			padding: 0 16px;
+		}
+
+		.team_description {
+			display: none;
+		}
+
+		.team__title {
+			line-height: 46px;
+		}
+
+		.site__home {
+			top: 11px;
+			line-height: 18px;
+		}
+
+		.site__home .gridicon {
+			margin-top: 0;
+		}
+	}
+
+	&:hover {
+		background: var(--sidebar-menu-hover-background);
+		cursor:pointer
+	}
+
+	// Highlight selected site
+	&.is_selected {
+		background-color: var( --sidebar-menu-selected-background-color );
+
+		.site__badge {
+			color: var( --sidebar-menu-selected-a-color );
+		}
+
+		.team__title,
+		.team__domain {
+			color: var( --sidebar-menu-selected-a-color );
+			&::after {
+				@include long-content-fade(
+					$color: var( --sidebar-menu-selected-background-color-gradient )
+				);
+			}
+		}
+
+		.count {
+			border-color: var( --sidebar-menu-selected-a-color );
+			color: var( --sidebar-menu-selected-a-color );
+		}
+
+		&.is_private .team__title::before {
+			color: var( --sidebar-menu-selected-a-color );
+		}
+	}
+
+}
+
+.team_selector__add_new_team {
+	padding: 0;
+	border-top: 1px solid darken( $sidebar-bg-color, 10% );
+	margin: auto 0 0;
+	display: flex;
+	flex-direction: row;
+	padding-left: 10px;
+}
+
+.team_selector__add_new_team .button {
+	box-sizing: border-box;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 8px;
+	color: var( --color-neutral-400 );
+	line-height: 2.1;
+
+	&:hover {
+		color: var( --color-neutral-700 );
+	}
+
+	@include breakpoint( '<660px' ) {
+		padding: 16px;
+	}
+
+	.creator_icon {
+		display: block;
+		float: left;
+		margin-right: 6px;
+		top: auto;
+		margin-top: auto;
+	}
+}
+
+.team__icon__panel {
+	position: relative;
+	height: 30px;
+	width: 30px;
+	overflow: hidden;
+	-ms-flex-item-align: center;
+	align-self: center;
+	margin-right: 8px;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+}
+
+.team_icon {
+	color: var(--color-surface);
+	z-index: 0;
+	background: var(--color-neutral-100);
+
+	&::before {
+		font-size: 20px;
+	}
+}
+
+
+// Wraps the anchor element
+.team__content {
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	padding: 16px;
+	position: relative;
+	width: 100%;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+// Adjusts the SiteIcon component for use
+// within a Site item
+.site .site-icon {
+	position: relative;
+	height: 30px;
+	width: 30px;
+	overflow: hidden;
+	align-self: center;
+	margin-right: 8px;
+	flex: 0 0 auto;
+}
+
+// The group of site title and domain
+.team__info {
+	width: 0; // Firefox needs explicit width (even 0)
+	flex: 1 0 auto;
+}
+
+.team__title {
+	color: var( --color-text );
+	display: block;
+	//font-size: 13px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+.team_description {
+	color: var( --color-text-subtle );
+	display: block;
+	max-width: 95%;
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+.team__title,
+.team_description {
+	overflow: hidden;
+	white-space: nowrap;
+	&::after {
+		@include long-content-fade( $color: var( --sidebar-secondary-background-gradient ) );
+	}
+}
+
+.site__home {
+	background: var( --color-accent );
+	color: $white;
+	display: block;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	text-transform: none;
+	overflow: initial;
+	opacity: 0;
+	transition: opacity 0.2s;
+	transform: translate3d( 0, 0, 0 );
+	position: absolute;
+	left: 16px;
+	top: 17px;
+
+	.gridicon {
+		margin-top: 5px;
+		vertical-align: middle;
+	}
+
+	.site.is-compact & {
+		width: 24px;
+		height: 24px;
+	}
+
+	&:hover {
+		color: $white;
+	}
+
+	@include breakpoint( '<660px' ) {
+		display: none;
+	}
+}
+
+.team__content:hover .site__home {
+	opacity: 1;
+}
+
+.site__badge {
+	color: var( --sidebar-gridicon-fill );
+	padding-right: 4px;
+	line-height: 0;
+	position: relative;
+	vertical-align: middle;
+}
+

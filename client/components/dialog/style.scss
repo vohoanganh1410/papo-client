@@ -1,0 +1,264 @@
+.dialog__backdrop {
+	align-items: center;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	right: 0;
+	top: 46px;
+	transition: background-color .2s ease-in;
+	z-index: z-index( 'root', '.dialog__backdrop' ); // try to ensure that dialogs are on top of everything else
+
+	&.dialog-enter,
+	&.dialog-leave.dialog-leave-active {
+		background-color: rgba( $gray-lighten-30, 0 );
+	}
+
+	&,
+	&.dialog-enter.dialog-enter-active,
+	&.dialog-leave {
+		background-color: rgba(0,0,0,.4);// rgba( $gray-lighten-30, 0.8 );
+	}
+
+	// covers the masterbar as well
+	&.is-full-screen {
+		top: 0;
+	}
+}
+
+.dialog.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 90%;
+	max-height: 90%;
+	margin: auto 0; // IE needs a horizontal margin values to properly center flex item
+	padding: 0;
+	opacity: 1;
+    border-radius: 8px;
+	transition: opacity .2s ease-in;
+    box-shadow: 0 20px 55px rgba(0,0,0,.35);
+
+	.dialog-enter &,
+	.dialog-leave.dialog-leave-active & {
+		opacity: 0;
+	}
+
+	&,
+	.dialog-enter.dialog-enter-active &,
+	.dialog-leave & {
+		opacity: 1;
+	}
+}
+
+.dialog__content {
+	padding: 16px;
+	overflow-y: auto;
+
+	@include breakpoint( ">480px" ) {
+		padding: 24px;
+	}
+
+	&:last-child {
+		bottom: 0;
+	}
+
+	h1 {
+		color: $gray-dark;
+		font-size: 1.375em;
+		font-weight: 600;
+		height: 2em;
+		line-height: 2em;
+		margin-bottom: .5em;
+	}
+}
+
+.dialog__action-buttons {
+	position: relative;
+	border-top: 1px solid $gray-lighten-30;
+	padding: 16px;
+	margin: 0;
+	text-align: right;
+
+	@include breakpoint( ">480px" ) {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 100%;
+		left: 16px;
+		right: 16px;
+		height: 24px;
+		background: linear-gradient( to bottom, rgba( 255,255,255, 0 ) 0%, rgba( 255,255,255, 1 ) 100% );
+		margin-bottom: 1px;
+	}
+}
+
+.dialog__action-buttons .button {
+	margin-left: 10px;
+	min-width: 80px;
+
+	.is-left-aligned {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+}
+
+.dialog__action-buttons .is-left-aligned {
+	float: left;
+}
+
+.full__screen__dialog {
+	width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    border-radius: 0 !important;
+}
+
+#fs_modal_footer {
+    display: flex;
+    align-items: center;
+    -ms-flex-pack: end;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    justify-content: flex-end;
+    padding: 0 16px;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 72px;
+}
+
+#fs_modal_footer #fs_modal_footer_content {
+    flex: 1 1 auto;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.fs_modal_btn {
+    position: absolute;
+    top: 48px;
+    width: 64px;
+    height: 64px;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+    color: #717274;
+    font-size: 10.8px;
+    line-height: 24px;
+    border-radius: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.fs_modal_header .fs_modal_btn {
+    top: 6px;
+    width: 48px;
+    height: 48px;
+    line-height: 32px;
+}
+
+.fs_modal_header .fs_modal_btn#fs_modal_close_btn {
+    right: 16px;
+}
+
+
+.fs_modal_btn .key_label {
+    position: absolute;
+    top: 2.25rem;
+    left: 0;
+    width: 100%;
+    display: block;
+}
+
+.fs_modal_header .fs_modal_btn .key_label {
+    display: none;
+}
+
+#fs_modal_header {
+    display: flex;
+    align-items: center;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.15);
+}
+
+#fs_modal h1, #fs_modal h2, #fs_modal h3, #fs_modal h4, #fs_modal h5 {
+    color: #2c2d30;
+}
+
+#fs_modal_header h3 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 22.4px;
+    white-space: nowrap;
+}
+
+.fs_modal_btn .ts_icon {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: block;
+}
+
+.fs_modal_btn .ts_icon:before {
+    font-size: 32px;
+}
+
+.contents_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15vh 32px 32px;
+}
+
+.fs_modal_header .contents_container {
+    top: 60px;
+    padding: 32px;
+}
+
+.fs_modal_footer .contents_container {
+    bottom: 72px;
+}
+
+.contents_container .contents {
+    width: 640px;
+    max-width: 100%;
+    padding-bottom: 32px;
+}

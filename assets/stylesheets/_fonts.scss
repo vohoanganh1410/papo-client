@@ -1,0 +1,318 @@
+@font-face {
+	font-family: 'HelveticaNeueLTPro-Lt';
+	src: url('/papo/fonts/neue/2B5D12_0_0.eot');
+	src: url('/papo/fonts/neue/2B5D12_0_0.eot?#iefix') format('embedded-opentype'), url('/papo/fonts/neue/2B5D12_0_0.woff') format('woff'), url('/papo/fonts/neue/2B5D12_0_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'HelveticaNeueLTPro-Roman';
+	src: url('/papo/fonts/neue/2B5D12_1_0.eot');
+	src: url('/papo/fonts/neue/2B5D12_1_0.eot?#iefix') format('embedded-opentype'), url('/papo/fonts/neue/2B5D12_1_0.woff') format('woff'), url('/papo/fonts/neue/2B5D12_1_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'HelveticaNeueLTPro-Th';
+	src: url('/papo/fonts/neue/2B5D12_2_0.eot');
+	src: url('/papo/fonts/neue/2B5D12_2_0.eot?#iefix') format('embedded-opentype'), url('/papo/fonts/neue/2B5D12_2_0.woff') format('woff'), url('/papo/fonts/neue/2B5D12_2_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'FuturaPTHeavy';
+	src: url('/papo/fonts/futura/ftn75-webfont.eot');
+	src: url('/papo/fonts/futura/ftn75-webfont.eot?#iefix') format('embedded-opentype'), url('/papo/fonts/futura/ftn75-webfont.woff') format('woff'), url('/papo/fonts/futura/ftn75-webfont.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Papo-Lato;
+	font-style: normal;
+	font-weight: 300;
+	src: local('Papo-Lato'), url(/papo/fonts/lato-2-compressed/lato-light.woff2) format('woff2'), url(/papo/fonts/lato-2/lato-light.woff) format('woff');
+	unicode-range: U+0000-F8FE, U+F900-FFFF
+}
+
+@font-face {
+	font-family: Papo-Lato;
+	font-style: normal;
+	font-weight: 400;
+	src: local('Papo-Lato'), url(/papo/fonts/lato-2-compressed/lato-regular.woff2) format('woff2'), url(/papo/fonts/lato-2/lato-regular.woff) format('woff');
+	unicode-range: U+0000-F8FE, U+F900-FFFF
+}
+
+@font-face {
+	font-family: Papo-Lato;
+	font-style: normal;
+	font-weight: 700;
+	src: local('Papo-Lato'), url(/papo/fonts/lato-2-compressed/lato-bold.woff2) format('woff2'), url(/papo/fonts/lato-2/lato-bold.woff) format('woff');
+	unicode-range: U+0000-F8FE, U+F900-FFFF
+}
+
+@font-face {
+	font-family: Papo-Lato;
+	font-style: normal;
+	font-weight: 900;
+	src: local('Papo-Lato'), url(/papo/fonts/lato-2-compressed/lato-black.woff2) format('woff2'), url(/papo/fonts/lato-2/lato-black.woff) format('woff');
+	unicode-range: U+0000-F8FE, U+F900-FFFF
+}
+
+@font-face {
+	font-family: Papo-Lato;
+	font-style: italic;
+	font-weight: 300;
+	src: local('Papo-Lato'), url(/papo/fonts/lato-2-compressed/lato-italic-light.woff2) format('woff2'), url(/papo/fonts/lato-2/lato-italic-light.woff) format('woff');
+	unicode-range: U+0000-F8FE, U+F900-FFFF
+}
+
+@font-face {
+	font-family: Papo-Lato;
+	font-style: italic;
+	font-weight: 400;
+	src: local('Papo-Lato'), url(/papo/fonts/lato-2-compressed/lato-italic.woff2) format('woff2'), url(/papo/fonts/lato-2/lato-italic.woff) format('woff');
+	unicode-range: U+0000-F8FE, U+F900-FFFF
+}
+
+@font-face {
+	font-family: Papo-Lato;
+	font-style: italic;
+	font-weight: 700;
+	src: local('Papo-Lato'), url(/papo/fonts/lato-2-compressed/lato-italic-bold.woff2) format('woff2'), url(/papo/fonts/lato-2/lato-italic-bold.woff) format('woff');
+	unicode-range: U+0000-F8FE, U+F900-FFFF
+}
+
+@font-face {
+	font-family: Papo-Lato;
+	font-style: italic;
+	font-weight: 900;
+	src: local('Papo-Lato'), url(/papo/fonts/lato-2-compressed/lato-italic-black.woff2) format('woff2'), url(/papo/fonts/lato-2/lato-italic-black.woff) format('woff');
+	unicode-range: U+0000-F8FE, U+F900-FFFF
+}
+
+/* fonts helvetica */
+
+/* Original old fonts */
+
+//@font-face {
+//	font-family: "Helvetica Neue";
+//	src: url("/papo/fonts/helvetica_neue.eot?#iefix") format("embedded-opentype"),
+//	url("/papo/fonts/helvetica_neue.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue.svg#helvetica_neue") format("svg");
+//}
+//
+//@font-face {
+//	font-family: "Helvetica Neue Thin";
+//	font-weight: 200;
+//	src: url("/papo/fonts/helvetica_neue_thin.eot?#iefix") format("embedded-opentype"),
+//	url("/papo/fonts/helvetica_neue_thin.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_thin.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_thin.svg#helvetica_neue_thin") format("svg");
+//}
+//
+//@font-face {
+//	font-family: "Helvetica Neue Medium";
+//	font-weight: bold;
+//	src: url("/papo/fonts/helvetica_neue_medium.eot?#iefix") format("embedded-opentype"),
+//	url("/papo/fonts/helvetica_neue_medium.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_medium.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_medium.svg#helvetica_neue_medium") format("svg");
+//}
+//
+///* Kwazimodo temporary studio fonts */
+//
+//@font-face{
+//	font-family:"Helvetica Neue Ultralight";
+//	src:url("/papo/fonts/helvetica_neue_ultralight.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_ultralight.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_ultralight.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_ultralight.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_ultralight.svg#helvetica_neue_ultralight") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"Helvetica Neue Light";
+//	src:url("/papo/fonts/helvetica_neue_light.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_light.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_light.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_light.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_light.svg#helvetica_neue_light") format("svg");
+//}
+//
+///* New Studio fonts */
+//
+//@font-face{
+//	font-family:"HelveticaNeueW01-UltLt";
+//	src:url("/papo/fonts/helvetica_neue_w01_ultlt.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_w01_ultlt.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_w01_ultlt.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_w01_ultlt.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_w01_ultlt.svg#helvetica_neue_w01_ultlt") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW01-Thin";
+//	src:url("/papo/fonts/helvetica_neue_thin.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_thin.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_thin.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_thin.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_thin.svg#helvetica_neue_thin") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW02-UltLt";
+//	src:url("/papo/fonts/helvetica_neue_w02_ultlt.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_w02_ultlt.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_w02_ultlt.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_w02_ultlt.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_w02_ultlt.svg#helvetica_neue_w02_ultlt") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW02-Thin";
+//	src:url("/papo/fonts/helvetica_neue_w02_thin.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_w02_thin.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_w02_thin.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_w02_thin.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_w02_thin.svg#helvetica_neue_w02_thin") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW01-45Ligh";
+//	src:url("/papo/fonts/helvetica_neue_w01_45ligh.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_w01_45ligh.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_w01_45ligh.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_w01_45ligh.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_w01_45ligh.svg#helvetica_neue_w01_45ligh") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW01-55Roma";
+//	src:url("/papo/fonts/helvetica_neue.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue.svg#helvetica_neue") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW01-65Medi";
+//	font-weight: bold;
+//	src:url("/papo/fonts/helvetica_neue_medium.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_medium.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_medium.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_medium.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_medium.svg#helvetica_neue_medium") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW01-75Bold";
+//	font-weight: bold;
+//	src:url("/papo/fonts/helvetica_neue_bold.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_bold.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_bold.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_bold.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_bold.svg#helvetica_neue_bold") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW02-45Ligh";
+//	src:url("/papo/fonts/helvetica_neue_light.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_light.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_light.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_light.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_light.svg#helvetica_neue_light") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW02-55Roma";
+//	src:url("/papo/fonts/helvetica_neue_w02_55roma.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_w02_55roma.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_w02_55roma.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_w02_55roma.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_w02_55roma.svg#helvetica_neue_w02_55roma") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW02-65Medi";
+//	font-weight: bold;
+//	src:url("/papo/fonts/helvetica_neue_w02_65medi.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_w02_65medi.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_w02_65medi.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_w02_65medi.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_w02_65medi.svg#helvetica_neue_w02_65medi") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW02-75Bold";
+//	font-weight: bold;
+//	src:url("/papo/fonts/helvetica_neue_w02_75bold.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_w02_75bold.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_w02_75bold.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_w02_75bold.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_w02_75bold.svg#helvetica_neue_w02_75bold") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW10-45Ligh";
+//	src:url("/papo/fonts/helvetica_neue_w10_45ligh.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_w10_45ligh.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_w10_45ligh.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_w10_45ligh.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_w10_45ligh.svg#helvetica_neue_w10_45ligh") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW10-65Medi";
+//	font-weight: bold;
+//	src:url("/papo/fonts/helvetica_neue_w10_65medi.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_w10_65medi.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_w10_65medi.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_w10_65medi.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_w10_65medi.svg#helvetica_neue_w10_65medi") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW10-75Bold";
+//	font-weight: bold;
+//	src:url("/papo/fonts/helvetica_neue_w10_75bold.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_w10_75bold.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_w10_75bold.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_w10_75bold.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_w10_75bold.svg#helvetica_neue_w02_75bold") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW10-35Thin";
+//	src:url("/papo/fonts/helvetica_neue_w10_35thin.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_w10_35thin.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_w10_35thin.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_w10_35thin.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_w10_35thin.svg#helvetica_neue_w10_35thin") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW10-25UltL";
+//	src:url("/papo/fonts/helvetica_neue_ultralight.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_ultralight.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_ultralight.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_ultralight.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_ultralight.svg#helvetica_neue_ultralight") format("svg");
+//}
+//
+//@font-face{
+//	font-family:"HelveticaNeueW10-55Roma";
+//	src:url("/papo/fonts/helvetica_neue_w10_55roma.eot?#iefix");
+//	src:url("/papo/fonts/helvetica_neue_w10_55roma.eot?#iefix") format("eot"),
+//	url("/papo/fonts/helvetica_neue_w10_55roma.woff") format("woff"),
+//	url("/papo/fonts/helvetica_neue_w10_55roma.ttf") format("truetype"),
+//	url("/papo/fonts/helvetica_neue_w10_55roma.svg#helvetica_neue_w10_55roma") format("svg");
+//}
+//
+//
+///*
+//This CSS resource incorporates links to font software which is
+//the valuable copyrighted property of Monotype Imaging and/or
+//its suppliers. You may not attempt to copy, install, redistribute, convert,
+//modify or reverse engineer this font software. Please contact Monotype Imaging
+//with any questions regarding Web Fonts:  http://webfonts.fonts.com
+//*/
+//
+///* END fonts helvetica */

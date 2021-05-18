@@ -1,0 +1,65 @@
+.axis text {
+	font-size: 11px;
+}
+.chartTitle {
+	font-size: 12px;
+	font-weight: bold;
+	text-anchor: middle;
+}
+.axis .title {
+	font-weight: bold;
+	text-anchor: middle;
+}
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #f2f2f2;
+	shape-rendering: crispEdges;
+}
+.x.axis path {
+	fill: none;
+	stroke: #f2f2f2;
+	shape-rendering: crispEdges;
+}
+.y.axis path {
+	display:none;
+}
+
+.y.axis .tick {
+	font-weight: 900;
+}
+
+.nav .area {
+	fill: lightgrey;
+	stroke-width: 0px;
+}
+.nav .line {
+	fill: none;
+	stroke: darkgrey;
+	stroke-width: 1px;
+}
+.viewport {
+	stroke: grey;
+	fill: black;
+	fill-opacity: 0.3;
+}
+.viewport .extent {
+	fill: green;
+}
+.well {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+div.tooltip {
+	position: absolute;
+	//text-align: center;
+	//width: 60px;
+	//height: 28px;
+	padding: 4px 10px;
+	font-size: 12px;
+	background: #f1f1f1;
+	border-radius: 8px;
+	pointer-events: none;
+	z-index: 100000;
+}

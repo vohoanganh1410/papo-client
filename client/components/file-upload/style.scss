@@ -1,0 +1,34 @@
+.icon__attachment {
+	opacity: 1;
+	//@include opacity(.4);
+	transition: all, 0.15s;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	vertical-align: top;
+	margin-right: 30px;
+
+	&:hover {
+		opacity: 0.6;
+		//@include opacity(.6);
+	}
+
+	input {
+		cursor: pointer;
+		direction: ltr;
+		filter: alpha( opacity=0 );
+		font-size: 23px;
+		height: 100%;
+		margin: 0;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+	}
+
+	svg {
+		position: relative;
+		top: 2px;
+	}
+}

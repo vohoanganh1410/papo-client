@@ -1,0 +1,90 @@
+.credit-card-form-fields__extras {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left: -15px;
+
+	.credit-card-form-fields__field {
+		flex-basis: calc( 100% - 15px );
+		flex-grow: 1;
+		flex-shrink: 0;
+		margin-left: 15px;
+	}
+
+	.credit-card-form-fields__state-field {
+		flex-basis: calc( 100% );
+	}
+
+	.form__hidden-input a {
+		display: block;
+		font-size:  12px;
+		margin-top: -10px;
+		margin-left: 15px;
+		margin-bottom: 15px;
+	}
+
+	@include breakpoint( '>480px' ) {
+		.mobile,
+		.customer-name {
+			flex-basis: calc( 50% - 15px );
+		}
+		.publish-date {
+			flex-basis: 4em;
+		}
+
+		.country {
+			flex-basis: auto;
+		}
+
+		.order-note {
+			flex-basis: auto;
+		}
+
+		&.ebanx-details-required {
+
+			.address-2,
+			.country,
+			.city {
+				flex-basis: calc( 100% - 15px );
+			}
+
+			.street-number {
+				flex-basis: calc( 33% - 15px);
+			}
+
+			.address-1 {
+				flex-basis: calc( 66% - 15px);
+			}
+
+			.document,
+			.phone,
+			.credit-card-form-fields__state-field,
+			.order-note {
+				flex-basis: calc( 50% - 15px );
+			}
+		}
+	}
+}
+
+.credit-card-form-fields__field {
+	margin-bottom: 15px;
+	position: relative;
+
+	select {
+		font-size: 15px;
+		width: 100%;
+	}
+
+	input[disabled] {
+		cursor: not-allowed;
+	}
+}
+
+.credit-card-form-fields__info-text {
+	margin-left: 15px;
+	color: $gray-lighten-10;
+	display: block;
+	font-size: 12px;
+	font-style: italic;
+}
+

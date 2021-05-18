@@ -1,0 +1,42 @@
+.conversations_header_icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 1 !important;
+    margin-left: 1px !important;
+    color: #717274 !important;
+    border-radius: 4px;
+    text-align: center !important;
+
+	//&.active {
+	//	background: #e8e8e8;
+	//	color: #2c2d30 !important;
+	//}
+}
+
+.info {
+	&.active {
+		background: #e8e8e8;
+		color: #2c2d30 !important;
+	}
+}
+
+//#action__btn.active:hover,
+//#action__btn.active {
+//    background: #e8e8e8;
+//    color: #2c2d30 !important;
+//}
+
+//#canvases_toggle.active,
+//#canvases_toggle.active:hover
+//#details_toggle.active:hover,
+//#details_toggle.active,
+//#recent_mentions_toggle.active,
+//#recent_mentions_toggle.active:hover,
+//#sli_recap_toggle.active,
+//#stars_toggle.active,
+//#stars_toggle.active:hover,
+//#info.active {
+//    background: #e8e8e8;
+//    color: #2c2d30;
+//}

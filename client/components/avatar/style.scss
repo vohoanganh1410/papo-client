@@ -1,0 +1,15 @@
+/**
+ * @component Gravatar
+ */
+
+.gravatar {
+	border-radius: 50%;
+    background: #aaa;
+    //width: 36px;
+    //height: 36px;
+
+	&.is-placeholder {
+		display: inline-block;
+		@include placeholder();
+	}
+}

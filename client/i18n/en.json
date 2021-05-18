@@ -1,0 +1,5 @@
+{
+	"about.buildnumber": "Build Number:",
+	"about.copyright": "Copyright 2019 - {currentYear} Papo Technology. All rights reserved",
+	"file_upload.fileAbove": "File above {max}MB cannot be uploaded: {filename}"
+}

@@ -1,0 +1,20 @@
+.order-status__button {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+
+	.iconfont:before {
+		font-size: 40px;
+	}
+}
+.order-status__button {
+	&.is-placeholder {
+		pointer-events: none;
+		user-select: none;
+		margin: 0 20px;
+	    border-radius: 50%;
+	    width: 26px;
+	    height: 26px;
+		background-color: $gray-lighten-20;
+		animation: loading-fade 1.6s ease-in-out infinite;
+	}
+}

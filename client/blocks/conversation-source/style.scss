@@ -1,0 +1,59 @@
+.conversation-source__author {
+	display: flex;
+	align-items: center;
+    max-width: 80%;
+    overflow: hidden;
+    margin-right: auto;
+}
+.conversation-source__author-avatar {
+	align-self: center;
+	flex-grow: 0;
+	flex-shrink: 0;
+    display: flex;
+    align-items: center;
+
+	.gridicon {
+		background-color: $gray;
+		border-radius: 50%;
+		fill: $white;
+		padding: 4px;
+	}
+}
+
+.conversation-source__author-info {
+	display: flex;
+	flex-flow: column;
+	margin-left: 8px;
+    max-width: 80%;
+
+	.large {
+		font-size: 18px;
+		font-weight: 300
+	}
+}
+
+.conversation-source__author-name {
+	font-weight: 900;
+}
+
+.conversation-source__author-info-element {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	a {
+		color: $gray-text-min;
+	}
+	a:focus,
+	a:hover {
+		color: $blue-wordpress;
+	}
+
+	.comment__date,
+	.comment__author-url {
+		font-size: 12px;
+	}
+}
+.page__avatar {
+	border-radius: 3px;
+}

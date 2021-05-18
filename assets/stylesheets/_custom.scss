@@ -1,0 +1,51 @@
+.full-height{
+	height:100%;
+}
+.masterbar{
+	.user-actions{
+		display: flex;
+	}
+	.nav-tab{
+		width: 150px;
+	    // padding-right: 0;
+	    // margin-right: 0;
+	}
+}
+.ml-5 {
+	margin-left: 5px;
+}
+
+.privacy__content {
+	text-align: left !important;
+}
+.privacy__header {
+	color: $gray-dark;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+    @include breakpoint( "<660px" ) {
+		font-size: 16px;
+	}
+}
+
+.privacy__sub-header {
+	color: $gray-dark;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+    @include breakpoint( "<660px" ) {
+		font-size: 14px;
+	}
+}
+
+.privacy__sub-sub-header {
+	color: $gray-dark;
+    font-size: 17px;
+    font-weight: 400;
+
+    @include breakpoint( "<660px" ) {
+		font-size: 13px;
+	}
+}

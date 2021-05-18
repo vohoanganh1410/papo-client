@@ -1,0 +1,64 @@
+.section_header {
+	&.is_card {
+		display: flex;
+		align-items: center;
+		padding-top: 11px;
+		padding-bottom: 11px;
+		position: relative;
+		line-height: 28px;
+
+		&:after {
+			content: '';
+		}
+
+		&.is_empty .section_header__label:after {
+			content: '\00a0';
+		}
+	}
+
+	.member_count {
+		margin-left: 8px;
+	}
+}
+
+.section_header__label {
+	display: flex;
+		align-items: center;
+	flex-grow: 1;
+	position: relative;
+	overflow: hidden;
+
+	// &:before {
+	// 	@include long-content-fade( $color : $white );
+	// }
+
+	.count {
+		margin-left: 8px;
+	}
+}
+
+.section_header__actions {
+	flex-grow: 0;
+	position: relative;
+
+	@include clear-fix;
+}
+
+.section_header__label {
+	color: $gray-dark;
+	font-size: 14px;
+}
+
+.section_header__actions {
+	.button {
+		float: left;
+		margin-right: 8px;
+	}
+
+	& > .button:last-child {
+		margin-right: 0;
+	}
+}
+.section_header__label_text {
+	
+}

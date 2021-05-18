@@ -1,0 +1,73 @@
+@keyframes c-toast-fade-in {
+	0% {
+		transform: translateY(20px);
+		opacity: 0
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1
+	}
+}
+
+@keyframes c-toast-fade-out {
+	0% {
+		transform: translateY(0);
+		opacity: 1
+	}
+	to {
+		transform: translateY(20px);
+		opacity: 0
+	}
+}
+
+.c-popover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden
+}
+
+.c-popover--fade {
+	animation: c-popover-fade 1s ease 0s 1 normal forwards
+}
+
+@keyframes c-popover-fade {
+	0% {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+
+.c-popover--fade .ReactModal__Content {
+	transition: none
+}
+
+.c-popover--fade .ReactModal__Content--before-close {
+	opacity: 0;
+	transition-property: opacity
+}
+
+.c-popover--fade.ReactModal__Overlay--before-close,
+.c-popover--no-pointer {
+	pointer-events: none
+}
+
+.c-popover--z_above_fs {
+	z-index: 1053
+}
+
+.c-popover--z_fs {
+	z-index: 1041
+}
+
+.c-popover--z_menu {
+	z-index: 1042
+}
+
+.c-popover--z_below_menu {
+	z-index: 1001
+}

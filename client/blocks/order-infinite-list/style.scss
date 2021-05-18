@@ -1,0 +1,71 @@
+.col_list {
+	width: calc(100% - 205px) !important;
+}
+body.is-section-admin-orders {
+	background-color: #fff !important;
+}
+
+.order_item_class {
+	//width: calc(100% - 450px);
+}
+
+.date_separator {
+	color: inherit !important;
+	text-align: left !important;
+}
+
+.order_item_container {
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.order_actions {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	bottom: 0;
+	z-index: 1
+}
+
+.actions_button {
+	width: 36px;
+	height: 36px;
+	text-align: center;
+}
+
+.order_item_content {
+	padding: 8px 12px 7px;
+
+	&.focus {
+		background-color: rgba(9, 30, 66, 0.04);
+		color: rgb(66, 82, 110);
+		fill: rgb(222, 235, 255);
+		text-decoration: none;
+		border-radius: 3px;
+	}
+
+	&.selected {
+		background-color: rgb(222, 235, 255);
+	}
+}
+
+.order_container {
+	padding: 5px 15px;
+}
+
+.avatar_container {
+	width: 36px;
+	height: 36px;
+}
+
+.order_details {
+	//border-bottom: 1px solid #f2f2f2;
+}
+
+.customer_name {
+	font-weight: 700;
+}
+
+.order_meta_text {
+	color: #6B778C;
+}

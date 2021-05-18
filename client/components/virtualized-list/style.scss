@@ -1,0 +1,34 @@
+.c_virtual_list{
+
+}
+.c_virtual_list__item,
+.c_virtual_list__sticky_container {
+	position: absolute;
+	width: 100%
+}
+
+.c_virtual_list__item__auto_width {
+	width: auto
+}
+
+.c_virtual_list__item__sticky {
+	position: static;
+	position: -webkit-sticky;
+	position: sticky
+}
+
+.c_virtual_list__scrollbar {
+	overflow: hidden
+}
+.c_virtual_list__scroll_container {
+
+}
+.c_virtual_list__scroll_container__scrolling {
+	pointer-events: none
+}
+
+.c_virtual_list__item__focus:focus,
+.c_virtual_list__item:focus {
+	outline-width: 0;
+	outline-style: none
+}

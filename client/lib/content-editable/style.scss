@@ -1,0 +1,10 @@
+.comPlainTextContentEditable {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+.comPlainTextContentEditable__has_placeholder::before {
+  content: attr(placeholder);
+  opacity: 0.5;
+  color: inherit;
+  cursor: text;
+}

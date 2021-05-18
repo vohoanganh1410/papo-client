@@ -1,0 +1,564 @@
+.conversation_virtualized_list {
+
+	//&::before {
+	//	content: '';
+	//	display: block;
+	//	position: -webkit-sticky;
+	//	position: sticky;
+	//	top: -21px;
+	//	left: 0;
+	//	right: 0;
+	//	height: 21px;
+	//	margin-top: -21px;
+	//	box-sizing: border-box;
+	//	box-shadow: 0 1px 0 rgba( 0, 0, 0, 0.1 );
+	//	background: #fff;
+	//	z-index: 200;
+	//}
+}
+.conversations_menu {
+	width: 100%;
+}
+//.conversation_menu__dropdown {
+//	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+//	background-color: #fff;
+//	//padding: 16px;
+//	border-radius: 6px;
+//	pointer-events: auto;
+//	min-width: 150px;
+//}
+
+.menu_section {
+	position: relative;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.menu_section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	border-top: 1px solid rgba( 0, 0, 0, 0.15 );
+	opacity: 0.8;
+}
+.offscreen {
+    position: absolute;
+    overflow: hidden;
+    clip: rect( 0 0 0 0 );
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+.team_menu > * {
+	opacity:1;
+	transition: opacity 0.2s ease 0s;
+	max-width: 80%;
+}
+
+.team_menu .notifications_menu_btn {
+	opacity: 0.6;
+}
+
+.team_menu.placeholder::after {
+	opacity: 1;
+}
+
+.team_menu.placeholder > * {
+	opacity: 0 !important;
+}
+
+.placeholder_shimmer_clipper {
+    position: absolute;
+    display: none;
+}
+html .team_menu .placeholder_shimmer_clipper {
+    opacity: 1!important;
+    top: 16px;
+    left: 16px;
+}
+.team_menu {
+	font-size: 16px;
+	font-weight: 900;
+	padding: 0 16px;
+	color: #fff;
+	//border-bottom: 1px solid #4d394b;
+	position: relative;
+	z-index: 50;
+	flex-basis: 61px;
+	flex-shrink: 0;
+}
+
+.team_menu.placeholder {
+	pointer-events: none;
+}
+
+.team_menu::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 61px;
+	//background-image: url(/papo/images/loading_channel_pane@2x.png);
+	background-position: 16px 16px;
+	background-size: 178px 230px;
+	background-repeat: no-repeat;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s ease 0s;
+	-moz-transition: opacity 0.2s ease 0s;
+	transition: opacity 0.2s ease 0s;
+}
+
+.team_menu {
+
+	.team_name_container {
+		margin-bottom: -6px;
+		//padding-top: 9px!important;
+		line-height: 17.2px;
+		display: flex;
+		align-items: center;
+		flex: 1;
+	}
+}
+
+.team_menu .team_name_caret {
+	margin-top: 3px;
+	outline: 0;
+	color: #a09a9f;
+	order: 1;
+}
+
+.team_menu.active .team_name_caret,
+.team_menu:focus .team_name_caret,
+.team_menu:hover .team_name_caret {
+	opacity: 1;
+	color: #fff;
+}
+
+.team_menu .notifications_menu_btn {
+	position: absolute;
+	top: 11px;
+	right: 16px;
+	line-height: 20px;
+	color: #a09a9f;
+	opacity: 0.6;
+	outline: 0;
+}
+
+.team_menu .notifications_menu_btn.active,
+.team_menu .notifications_menu_btn:focus,
+.team_menu .notifications_menu_btn:hover {
+	color: #fff;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.team_menu .notifications_menu_btn .notifications_menu_tip {
+	margin-top: -17px;
+}
+
+.team_menu .notifications_menu_btn_react {
+	//position: absolute;
+	//top: 11px;
+	//right: 16px;
+	//z-index: 101
+}
+
+body.loading .team_menu .presence_container {
+	display: none;
+}
+
+body:not( .loading ) .team_menu:not( .placeholder ) {
+	cursor: pointer;
+}
+
+body:not( .loading ) .team_menu.active,
+body:not( .loading ) .team_menu:hover {
+	background: #3e313c;
+	border-bottom-color: #3e313c;
+}
+
+body:not( .loading ) .team_menu.active::before,
+body:not( .loading ) .team_menu:hover::before {
+	opacity: 1;
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	color: #fff;
+}
+
+body:not( .loading ) .team_menu.active .team_menu_user_name,
+body:not( .loading ) .team_menu.active .current_user_current_status,
+body:not( .loading ) .team_menu:hover .team_menu_user_name,
+body:not( .loading ) .team_menu:hover .current_user_current_status {
+	color: #fff;
+	opacity: 1;
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+}
+
+.team_menu::before {
+	opacity: 0.6;
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	position: absolute;
+	right: 20px;
+	top: 0;
+	color: #a09a9f;
+	-webkit-transition: color 0.1s ease-out 0s;
+	-moz-transition: color 0.1s ease-out 0s;
+	transition: color 0.1s ease-out 0s;
+}
+
+.team_menu .team_name {
+	max-width: 88%;
+}
+
+[lang] .team_menu .team_name {
+	font-size: 17px;
+	line-height: 1.375;
+}
+
+[lang=ja-JP] .team_menu .team_name {
+	font-size: 16px;
+	line-height: 1.475;
+}
+
+.team_menu .presence {
+	margin-top: 0;
+	display: inline-block;
+	vertical-align: top;
+	background: 0 0 !important;
+}
+
+.team_menu .presence .presence_icon {
+	color: inherit!important;
+	display: inline-block!important;
+	font-size: 10px;
+	margin-top: -3px;
+	margin-left: -6px;
+	opacity: 1;
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	position: static;
+	text-shadow: 0 1px 1px rgba( 0, 0, 0, 0.25 );
+	vertical-align: middle;
+}
+
+.team_menu .presence.away {
+	opacity: 0.3;
+	-moz-opacity: 0.3;
+	-khtml-opacity: 0.3;
+}
+
+.team_menu .presence.active {
+	color: #38978d;
+}
+
+.team_menu .presence.offline {
+	color: #d72b3f;
+}
+
+.team_menu .presence.trouble {
+	color: #ff9000;
+}
+
+.presence_container {
+	float: left;
+	margin-left: -5px;
+	margin-right: 1px;
+	width: 20px;
+	height: 21px;
+	text-align: center;
+}
+
+.team_menu_user {
+	position: relative;
+	margin-top: 0;
+	color: #ab9ba9;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	z-index: 1;
+	flex: 1;
+}
+
+.team_menu_user_details {
+	display: flex;
+}
+
+.team_menu_user_details .team_menu_user_name {
+	flex: 0 1 auto;
+}
+
+.team_menu_user_details .current_user_current_status {
+	flex: 0 0 auto;
+	opacity: 0.6;
+}
+
+.team_menu_user_details .current_user_current_status ts-icon {
+	color: #fff;
+}
+
+.current_user_current_status {
+	margin-left: 4.8px;
+}
+
+/* Column Background */
+
+.client_channels_list_container {
+	background: #f8f8fa;
+}
+
+
+/* Menu Background */
+
+.team_menu {
+	color: #383f45;
+	text-shadow: 0 1px 1px rgba( 0, 0, 0, 0.25 );
+}
+.presence {
+    display: inline-block;
+    position: relative;
+    width: 9px;
+    height: 9px;
+}
+.presence::before {
+    position: absolute;
+    top: -15px;
+    left: -5px;
+    width: 9px;
+    height: 9px;
+}
+.team_menu,
+.team_menu_overlay {
+	border-color: #f1f1f1;
+}
+
+body:not( .loading ) .team_menu:hover,
+body:not( .loading ) .team_menu.active {
+	background: #f1f1f1;
+	border-color: #f1f1f1;
+}
+
+
+/* Text Color */
+
+.team_menu::before,
+.team_menu .notifications_menu_btn,
+.team_menu .team_name_caret,
+.team_menu_user_name {
+	color: #383f45 !important;
+	opacity: 0.6;
+}
+
+.team_menu_user,
+.team_menu_user_details .current_status ts-icon {
+	color: #383f45;
+}
+
+.team_menu:hover::before,
+.team_menu.active::before,
+.team_menu:hover .team_name_caret,
+.team_menu.active .team_name_caret,
+.team_menu:hover .team_menu_user_name,
+.team_menu:hover .current_user_current_status,
+.team_menu .team_name_caret.focus-ring {
+	opacity: 1;
+}
+
+
+/* Presence */
+
+.team_menu .presence.active::before {
+	color: #60d156;
+	opacity: 1;
+}
+
+
+/* Badge + Mentions bar */
+
+ts-jumper ol li .unread_count {
+	background: #dc5960;
+}
+
+
+/* No text shadows */
+
+.team_menu {
+	text-shadow: none !important;
+	display: flex;
+	align-items: center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 10px 0 7px !important;
+	height: 54px;
+}
+.member_image {
+    border-radius: 3.2px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+	display: flex;
+	align-items: center;
+}
+.slack_menu_header {
+    height: 40px;
+    margin: 16px 24px 8px;
+}
+.member_image.thumb_36 {
+    width: 36px;
+    height: 36px;
+}
+.slack_menu_header .member_preview_link, .slack_menu_header .team_icon {
+    float: left;
+    margin-right: 10px;
+}
+.slack_menu_section {
+	position: relative;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.slack_menu_section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	border-top: 1px solid rgba( 0, 0, 0, 0.15 );
+	opacity: 0.8;
+}
+
+.slack_menu_you::before {
+	display: none;
+}
+
+.slack_menu_header {
+	height: 40px;
+    margin: 0;
+    //padding-top: 15px;
+    padding-left: 20px;
+    display: inline-block;
+    text-align: left;
+    width: calc( 100% - 36px );
+}
+
+.slack_menu_header .member_preview_link,
+.slack_menu_header .team_icon {
+	float: left;
+	margin-right: 10px;
+}
+
+.slack_menu_header_primary {
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+	-webkit-transform: translateY( -3px );
+	-moz-transform: translateY( -3px );
+	-ms-transform: translateY( -3px );
+	transform: translateY( -3px );
+}
+
+.slack_menu_header_secondary {
+    font-size: 15px;
+    line-height: 18px;
+    color: #919193;
+    font-weight: 500;
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+    -webkit-transform: translateY( -5px );
+    -moz-transform: translateY( -5px );
+    -ms-transform: translateY( -5px );
+    transform: translateY( -5px );
+}
+
+[lang] .slack_menu_header_primary {
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 900;
+}
+
+[lang=ja-JP] .slack_menu_header_primary {
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.slack_menu_header_primary.vertically_center_full_name {
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	transform: none;
+}
+
+[lang] .slack_menu_header_primary.vertically_center_full_name {
+	line-height: 2.25;
+}
+
+[lang=ja-JP] .slack_menu_header_primary.vertically_center_full_name {
+	line-height: 2.45;
+}
+
+.avatar_img {
+	width: 50px;
+}
+.avatar_1 {
+	width: 25px;
+}
+
+.avatar_2 {
+	width: 25px;
+}
+.position_relative {
+	position: relative;
+}
+.round_flex {
+	align-items: center;
+	background-color: rgba( 0, 0, 0, 0.05 );
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+.thin_border_right {
+	border-right: 1px solid #fff;
+}
+.thin_border_bottom {
+	border-bottom: 1px solid #fff;
+}
+.float_left {
+	box-sizing: border-box;
+	float: left;
+	overflow: hidden;
+}
+.fit_cover {
+	object-fit: cover;
+}
+.w50 {
+	width: 50px;
+	height: 50px;
+}
+.w25 {
+	width: 25px;
+	height: 25px;
+}
+.item_text {
+	padding-left: 6px;
+}
+
+.avatar_container {
+	border: 2px solid #f1f1f1;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}

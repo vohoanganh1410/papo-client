@@ -1,0 +1,103 @@
+@import "../../../assets/stylesheets/shared/colors";
+@import "../../../assets/stylesheets/shared/color-schemes";
+@import "../../../assets/stylesheets/shared/mixins/mixins";
+
+.card {
+	display: block;
+	position: relative;
+	margin: 0 auto 10px auto;
+	padding: 16px;
+	box-sizing: border-box;
+	background: $white;
+	-webkit-box-shadow: 0 0 0 1px #e1e2e2;
+	box-shadow: 0 0 0 1px #e1e2e2;
+
+	@include clear-fix;
+
+	@include breakpoint( ">480px" ) {
+		margin-bottom: 0;
+		padding: 24px;
+	}
+
+	// Compact Card
+	&.is_compact {
+		margin-bottom: 1px;
+
+		@include breakpoint( ">480px" ) {
+			margin-bottom: 1px;
+			padding: 16px 24px;
+		}
+	}
+
+	&.is_borderless {
+		border: none;
+		box-shadow: none;
+	}
+
+	&.is_card_link {
+		padding-right: 48px;
+	}
+
+	&.is_clickable {
+		cursor: pointer;
+	}
+
+	&.is_highlight {
+		padding-left: 21px;
+	}
+
+	&.is_error {
+		border-left: 3px solid $alert-red;
+	}
+
+	&.is_info {
+		border-left: 3px solid $blue-wordpress;
+	}
+
+	&.is_success {
+		border-left: 3px solid $alert-green;
+	}
+
+	&.is_warning {
+		border-left: 3px solid $alert-yellow;
+	}
+
+
+}
+
+
+// Clickable Card
+.card__link_indicator {
+	color: $gray-text-min;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 16px;
+
+	html[dir="rtl"] & {
+		&.gridicons-chevron-right {
+			transform: scaleX( -1 );
+		}
+	}
+}
+
+.card__link_icon {
+	&:before {
+		font-size: 26px;
+	}
+}
+
+a.card:hover {
+	.card__link_indicator {
+		color: $gray-text;
+	}
+}
+
+a.card:focus {
+	outline: 0;
+
+	.card__link_indicator {
+		color: $link-highlight;
+	}
+}

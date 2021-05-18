@@ -1,0 +1,24 @@
+/** @format */
+
+@import '../shared/functions/z-index';
+@import '../shared/mixins/breakpoints';
+@import '../shared/mixins/clear-text';
+@import '../shared/mixins/clear-fix';
+@import '../shared/mixins/heading';
+@import '../shared/mixins/long-content-fade';
+@import '../shared/mixins/placeholder';
+
+@import '../shared/colors';
+@import '../shared/typography';
+
+
+@import 'blocks/conversation-item/style';
+@import 'conversations/style';
+@import './media';
+@import 'components/post/style';
+
+
+label {
+	display: block;
+	margin-bottom: 5px
+}

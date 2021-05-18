@@ -1,0 +1,138 @@
+.c-tooltip__tip {
+	font-size: 13px;
+	line-height: 1.38463;
+	font-weight: 400;
+	display: inline-block;
+	color: #fff;
+	background-color: #222;
+	max-width: 200px;
+	padding: 8px 12px 10px;
+	border-radius: 8px;
+	position: relative;
+	font-weight: 700;
+	text-align: center;
+	word-wrap: break-word
+}
+
+.c-tooltip__tip__arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	margin: -6px;
+	border: 6px solid transparent
+}
+
+.c-tooltip__tip--left {
+	margin-right: 8px
+}
+
+.c-tooltip__tip--left .c-tooltip__tip__arrow {
+	border-left-color: #222;
+	right: -6px;
+	top: 50%
+}
+
+.c-tooltip__tip--right {
+	margin-left: 8px
+}
+
+.c-tooltip__tip--right .c-tooltip__tip__arrow {
+	border-right-color: #222;
+	left: -6px;
+	top: 50%
+}
+
+.c-tooltip__tip--top {
+	margin-bottom: 8px
+}
+
+.c-tooltip__tip--top .c-tooltip__tip__arrow {
+	border-top-color: #222;
+	bottom: -6px;
+	left: 50%
+}
+
+.c-tooltip__tip--top-left {
+	margin-bottom: 8px
+}
+
+.c-tooltip__tip--top-left .c-tooltip__tip__arrow {
+	border-top-color: #222;
+	bottom: -6px;
+	left: 50%;
+	left: 25%
+}
+
+.c-tooltip__tip--top-right {
+	margin-bottom: 8px
+}
+
+.c-tooltip__tip--top-right .c-tooltip__tip__arrow {
+	border-top-color: #222;
+	bottom: -6px;
+	left: 50%;
+	left: auto;
+	right: 25%
+}
+
+.c-tooltip__tip--bottom {
+	margin-top: 8px
+}
+
+.c-tooltip__tip--bottom .c-tooltip__tip__arrow {
+	border-bottom-color: #222;
+	top: -6px;
+	left: 50%
+}
+
+.c-tooltip__tip--bottom-left {
+	margin-top: 8px
+}
+
+.c-tooltip__tip--bottom-left .c-tooltip__tip__arrow {
+	border-bottom-color: #222;
+	top: -6px;
+	left: 50%;
+	left: 25%
+}
+
+.c-tooltip__tip--bottom-right {
+	margin-top: 8px
+}
+
+.c-tooltip__tip--bottom-right .c-tooltip__tip__arrow {
+	border-bottom-color: #222;
+	top: -6px;
+	left: 50%;
+	left: auto;
+	right: 25%
+}
+
+.c-tooltip__tip--success {
+	background-color: #008952
+}
+
+.c-tooltip__tip--success.c-tooltip__tip--left .c-tooltip__tip__arrow {
+	border-left-color: #008952
+}
+
+.c-tooltip__tip--success.c-tooltip__tip--right .c-tooltip__tip__arrow {
+	border-right-color: #008952
+}
+
+.c-tooltip__tip--success.c-tooltip__tip--top-left .c-tooltip__tip__arrow,
+.c-tooltip__tip--success.c-tooltip__tip--top-right .c-tooltip__tip__arrow,
+.c-tooltip__tip--success.c-tooltip__tip--top .c-tooltip__tip__arrow {
+	border-top-color: #008952
+}
+
+.c-tooltip__tip--success.c-tooltip__tip--bottom-left .c-tooltip__tip__arrow,
+.c-tooltip__tip--success.c-tooltip__tip--bottom-right .c-tooltip__tip__arrow,
+.c-tooltip__tip--success.c-tooltip__tip--bottom .c-tooltip__tip__arrow {
+	border-bottom-color: #008952
+}
+
+.c-tooltip__tip--member {
+	max-width: 500px;
+	padding: 6px 12px 6px 6px
+}

@@ -1,0 +1,273 @@
+.c-input_textarea {
+	border-radius: 4px;
+	border: 1px solid #919193;
+	transition: border 80ms ease-out, box-shadow 80ms ease-out;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 8px 12px 4px;
+	height: 104px;
+	min-height: 36px;
+	width: 100%;
+	vertical-align: top;
+	resize: vertical;
+	font-size: 15px;
+	line-height: 1.46666667;
+}
+
+.c-input_textarea:focus {
+	outline: none;
+	box-shadow: 0 0 0 1px #0576b9, 0 0 0 5px rgba(45, 158, 224, .3);
+	border-radius: 4px;
+	border-color: transparent;
+}
+
+.c-input_textarea:focus:-moz-placeholder,
+.c-input_textarea:focus:-ms-input-placeholder,
+.c-input_textarea:focus::-moz-placeholder,
+.c-input_textarea:focus::-webkit-input-placeholder {
+	color: #2d2e31;
+}
+
+.c-input_textarea[disabled] {
+	background: #f9f9f9;
+	border: 1px solid #919193;
+}
+
+.c-input_textarea::-webkit-input-placeholder {
+	color: #919193;
+}
+
+.c-input_textarea:-moz-placeholder,
+.c-input_textarea::-moz-placeholder {
+	color: #919193;
+};
+
+.c-input_textarea:-ms-input-placeholder {
+	color: #919193;
+}
+
+.c-input_textarea::placeholder {
+	color: #919193;
+}
+
+.c-input_textarea--with_default {
+	border: 1px solid #717274;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-bottom: 0;
+}
+
+.c-input_textarea--with_default:focus,
+.c-input_textarea--with_default:hover {
+	border: 1px solid #717274;
+}
+
+.c-input_textarea--with_info {
+	border: 1px solid #2d9ee0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-bottom: 0;
+}
+
+.c-input_textarea--with_info:focus,
+.c-input_textarea--with_info:hover {
+	border: 1px solid #2d9ee0;
+}
+
+.c-input_textarea--with_success {
+	border: 1px solid #008952;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-bottom: 0;
+}
+
+.c-input_textarea--with_success:focus,
+.c-input_textarea--with_success:hover {
+	border: 1px solid #008952;
+}
+
+.c-input_textarea--with_warning {
+	border: 1px solid #ff9000;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-bottom: 0;
+}
+
+.c-input_textarea--with_warning:focus,
+.c-input_textarea--with_warning:hover {
+	border: 1px solid #ff9000;
+}
+
+.c-input_textarea--with_error {
+	border: 1px solid #d72b3f;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-bottom: 0;
+}
+
+.c-input_textarea--with_error:focus,
+.c-input_textarea--with_error:hover {
+	border: 1px solid #d72b3f;
+}
+
+.c-input_textarea__wrapper {
+	margin: 0 0 20px;
+}
+
+.c-input_textarea--large {
+	font-size: 18px;
+	line-height: 1.33333333;
+}
+
+.c-input_textarea--small {
+	height: 50px !important;
+}
+
+.c-input_textarea--with_hint {
+	margin-bottom: 0;
+}
+
+.c-input_textarea--resize_both {
+	resize: both;
+}
+
+.c-input_textarea--resize_h {
+	resize: horizontal;
+}
+
+.c-input_textarea--resize_none {
+	resize: none;
+}
+
+textarea.c-input_textarea {
+	border-radius: 4px;
+	border: 1px solid #919193;
+	transition: border 80ms ease-out, box-shadow 80ms ease-out;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 8px 12px 4px;
+	height: 104px;
+	min-height: 36px;
+	width: 100%;
+	vertical-align: top;
+	resize: vertical;
+	font-size: 15px;
+	line-height: 1.46666667;
+}
+
+textarea.c-input_textarea:focus {
+	outline: none;
+	box-shadow: 0 0 0 1px #0576b9, 0 0 0 5px rgba(45, 158, 224, .3);
+	border-radius: 4px;
+	border-color: transparent;
+}
+
+textarea.c-input_textarea:focus:-moz-placeholder,
+textarea.c-input_textarea:focus:-ms-input-placeholder,
+textarea.c-input_textarea:focus::-moz-placeholder,
+textarea.c-input_textarea:focus::-webkit-input-placeholder {
+	color: #2d2e31;
+}
+
+textarea.c-input_textarea[disabled] {
+	background: #f9f9f9;
+	border: 1px solid #919193;
+}
+
+textarea.c-input_textarea::-webkit-input-placeholder {
+	color: #919193;
+}
+
+textarea.c-input_textarea:-moz-placeholder,
+textarea.c-input_textarea::-moz-placeholder {
+	color: #919193;
+}
+
+textarea.c-input_textarea:-ms-input-placeholder {
+	color: #919193;
+}
+
+textarea.c-input_textarea::placeholder {
+	color: #919193;
+}
+
+textarea.c-input_textarea.c-input_textarea--large {
+	font-size: 18px;
+	line-height: 1.33333333;
+}
+
+textarea.c-input_textarea.c-input_textarea--with_hint {
+	margin-bottom: 0;
+}
+
+textarea.c-input_textarea.c-input_textarea--resize_both {
+	resize: both;
+}
+
+textarea.c-input_textarea.c-input_textarea--resize_h {
+	resize: horizontal;
+}
+
+textarea.c-input_textarea.c-input_textarea--resize_none {
+	resize: none;
+}
+
+textarea.c-input_textarea--with_default {
+	border: 1px solid #717274;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-bottom: 0;
+}
+
+textarea.c-input_textarea--with_default:focus,
+textarea.c-input_textarea--with_default:hover {
+	border: 1px solid #717274;
+}
+
+textarea.c-input_textarea--with_info {
+	border: 1px solid #2d9ee0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-bottom: 0;
+}
+
+textarea.c-input_textarea--with_info:focus,
+textarea.c-input_textarea--with_info:hover {
+	border: 1px solid #2d9ee0;
+}
+
+textarea.c-input_textarea--with_success {
+	border: 1px solid #008952;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-bottom: 0;
+}
+
+textarea.c-input_textarea--with_success:focus,
+textarea.c-input_textarea--with_success:hover {
+	border: 1px solid #008952;
+}
+
+textarea.c-input_textarea--with_warning {
+	border: 1px solid #ff9000;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-bottom: 0;
+}
+
+textarea.c-input_textarea--with_warning:focus,
+textarea.c-input_textarea--with_warning:hover {
+	border: 1px solid #ff9000;
+}
+
+textarea.c-input_textarea--with_error {
+	border: 1px solid #d72b3f;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-bottom: 0;
+}
+
+textarea.c-input_textarea--with_error:focus,
+textarea.c-input_textarea--with_error:hover {
+	border: 1px solid #d72b3f;
+}

@@ -1,0 +1,126 @@
+// .custom__scrollbars:hover .c_scrollbar__bar{
+//     opacity: 1
+// }
+.custom__scrollbars {
+	// background: #fff;
+
+	&:hover .c_scrollbar__track {
+	  opacity: 1 !important;
+	}
+}
+
+.c_scrollbar {
+	position: relative;
+	overflow: hidden;
+
+	//&::-webkit-scrollbar {
+	//	width: 0;  /* remove scrollbar space */
+	//	background: transparent;  /* optional: just make scrollbar invisible */
+	//}
+}
+
+.c_scrollbar__hider {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	outline: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: -50px;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	transform: translateZ( 0 );
+
+	//&::-webkit-scrollbar {
+	//	width: 0;  /* remove scrollbar space */
+	//	background: transparent;  /* optional: just make scrollbar invisible */
+	//}
+}
+
+.c_scrollbar__hider::-webkit-scrollbar {
+	display: none
+}
+
+.c_scrollbar__track {
+	position: absolute;
+	right: 2px;
+	top: 0;
+	bottom: 0;
+	width: 8px !important;
+}
+
+.c_scrollbar__track:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: -2px;
+	background: none
+}
+
+.c_scrollbar__hidden .c_scrollbar__track {
+	display: none
+}
+
+.c_scrollbar__bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-radius: 4px !important;
+	background: rgba(29,28,29,.52);
+	opacity: 0;
+	cursor: default;
+	outline: none;
+	z-index: 1;
+	will-change: transform
+}
+
+.c_scrollbar:hover .c_scrollbar__bar,
+.c_scrollbar__bar:active {
+	opacity: 1
+}
+
+.c_scrollbar__bar:active:after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	cursor: default;
+}
+
+.c_scrollbar__monkey .c_scrollbar__child {
+	padding-right: 12px;
+}
+
+.c_scrollbar__monkey.c_scrollbar__hidden .c_scrollbar__child {
+	padding-right: 0
+}
+
+.c_scrollbar__monkey .c_scrollbar__track {
+	right: 4px;
+	margin: 4px 0;
+	border-radius: 3px;
+	background: #f9f9f9;
+	z-index: 1
+}
+
+.c_scrollbar__monkey .c_scrollbar__bar {
+	background: rgba(44, 45, 48, .52);
+	box-shadow: 0 3px 0 #fff, 0 -3px 0 #fff
+}
+
+.c_scrollbar__monkey .c_scrollbar__bar,
+.c_scrollbar__monkey .c_scrollbar__bar:active,
+.c_scrollbar__monkey:hover .c_scrollbar__bar {
+	opacity: 1
+}
+
+.c_scrollbar__fade:not(:hover) .c_scrollbar__bar {
+	transition: opacity .1s .5s
+}

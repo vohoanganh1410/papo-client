@@ -1,0 +1,183 @@
+.loading_layout {
+    height: 100%;
+}
+
+.loading__screen {
+    display: table;
+    position: absolute;
+    width: 100%;
+    min-width: 800px;
+    min-height: 420px;
+    height: 100%;
+    top: 0;
+    left: 0;
+	right: 0;
+    z-index: 1040;
+    background: white;
+}
+
+.loading_welcome {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#loading_welcome {
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url('/papo/images/loading_conversations_page@2x.png'), url('/papo/images/loading_conversations_page_actions@2x.png');
+    background-position: 21px 16px, right 225px top 16px;
+    background-repeat: no-repeat;
+    background-size: 200px 30px, 425px 21px;
+}
+
+#self_help_link_div {
+    opacity: 0;
+    position: absolute;
+    right: 320px;
+    bottom: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.loading_message {
+    width: 100%;
+    text-align: center;
+}
+
+.loading_message_attribution_img {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.loading_message p {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 2rem;
+    margin: 0 auto 0.25rem;
+    color: #2C2D30;
+    width: 500px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.loading_message .loading_message_attribution {
+    color: #9e9ea6;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-right: 0.5rem;
+}
+
+.infinite_spinner {
+    position: relative;
+	margin: 0 auto;
+}
+
+.infinite_spinner_large {
+    width: 80px;
+    height: 80px
+}
+
+.infinite_spinner_medium {
+    width: 52px;
+    height: 52px
+}
+
+.infinite_spinner_small {
+    width: 24px;
+    height: 24px
+}
+
+
+//.infinite_spinner_spinner {
+//	position: absolute;
+//	top: 0;
+//	left: 0;
+//	width: 100%;
+//	height: 100%;
+//	-webkit-transform: rotate(-45deg);
+//	-moz-transform: rotate(-45deg);
+//	-ms-transform: rotate(-45deg);
+//	transform: rotate(-45deg);
+//	:global {-webkit-animation: 1.2s cubic-bezier(.25, .29, .54, .86) 0s infinite normal none spin};
+//	:global {-moz-animation: 1.2s cubic-bezier(.25, .29, .54, .86) 0s infinite normal none spin};
+//	:global {-o-animation: 1.2s cubic-bezier(.25, .29, .54, .86) 0s infinite normal none spin};
+//	:global {animation: 1.2s cubic-bezier(.25, .29, .54, .86) 0s infinite normal none spin };
+//}
+//
+//.infinite_spinner_tail {
+//	:global {-webkit-animation: 1.2s cubic-bezier(.41, .24, .64, .69) 0s infinite normal none spin};
+//	:global {-moz-animation: 1.2s cubic-bezier(.41, .24, .64, .69) 0s infinite normal none spin};
+//	:global {-o-animation: 1.2s cubic-bezier(.41, .24, .64, .69) 0s infinite normal none spin};
+//	:global {animation: 1.2s cubic-bezier(.41, .24, .64, .69) 0s infinite normal none spin };
+//}
+
+.infinite_spinner_spinner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: 1.2s cubic-bezier(.25, .29, .54, .86) 0s infinite normal none spin;
+	-moz-animation: 1.2s cubic-bezier(.25, .29, .54, .86) 0s infinite normal none spin;
+	-o-animation: 1.2s cubic-bezier(.25, .29, .54, .86) 0s infinite normal none spin;
+	animation: 1.2s cubic-bezier(.25, .29, .54, .86) 0s infinite normal none spin;
+}
+
+.infinite_spinner_tail {
+	-webkit-animation: 1.2s cubic-bezier(.41, .24, .64, .69) 0s infinite normal none spin;
+	-moz-animation: 1.2s cubic-bezier(.41, .24, .64, .69) 0s infinite normal none spin;
+	-o-animation: 1.2s cubic-bezier(.41, .24, .64, .69) 0s infinite normal none spin;
+	animation: 1.2s cubic-bezier(.41, .24, .64, .69) 0s infinite normal none spin;
+}
+
+.infinite_spinner_bg {
+    stroke-width: 8;
+    fill: none;
+    opacity: .2;
+    stroke: grey
+}
+
+.infinite_spinner_bg_white {
+    stroke: #fff
+}
+
+.infinite_spinner_path {
+    stroke-width: 8;
+    fill: none
+}
+
+.infinite_spinner_white {
+    stroke: #fff
+}
+
+.infinite_spinner_blue {
+    stroke: #50acf4
+}
+
+.infinite_spinner_path {
+    stroke-dasharray: 55, 200;
+    stroke-dashoffset: 90;
+    stroke-linecap: round
+}
+
+.infinite_spinner_fast {
+    animation-duration: .6s
+}
+
+.infinite_spinner__container {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.infinite_spinner__container--50vh {
+    height: 50vh
+}
+

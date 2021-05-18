@@ -1,0 +1,16 @@
+@import './team-picker/style';
+@import './members/style';
+@import 'blocks/order-infinite-list/style';
+
+body.is-group-admin {
+	color: #172B4D;
+}
+
+.admin_container {
+	padding-top: 50px !important;
+
+	&.admin_container_small {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}

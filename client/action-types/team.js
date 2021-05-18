@@ -1,0 +1,14 @@
+import keyMirror from 'key-mirror';
+
+export default keyMirror( {
+	CREATE_TEAM: null,
+	CREATE_TEAM_SUCCESS: null,
+	CREATE_TEAM_FAILED: null,
+	RECEIVED_TEAM: null,
+	CREATE_TEAM_MEMBER_SUCCESS: null,
+	CREATE_TEAM_MEMBER_FAILED: null,
+	RECEIVED_TEAM_MEMBER: null,
+	UPDATE_TEAM_MEMBER: null,
+	UPDATE_TEAM_MEMBER_SUCCESS: null,
+	UPDATE_TEAM_MEMBER_FAILED: null,
+} );

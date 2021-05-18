@@ -1,0 +1,26 @@
+/*rtl:ignore*/
+.social-buttons__button {
+	background: #4267B2;
+	color: #fff;
+	box-shadow: none;
+	border: none;
+}
+.social-buttons__service-name {
+	margin-left: 9px;
+}
+
+.social-buttons__error {
+	.popover__inner {
+		padding: 10px;
+		max-width: 200px;
+	}
+}
+
+.login__social-buttons {
+	text-align: center;
+	
+	.button {
+		width: 100%;
+	}
+    
+}

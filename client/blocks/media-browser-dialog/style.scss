@@ -1,0 +1,113 @@
+.media_browser {
+	width: 850px !important;
+	top: 100px;
+}
+.media__gallery {
+    .media-library__filter-bar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 0 15px;
+        z-index: 10;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        .actions {
+            /* width: 250px; */
+            display: flex;
+            width: 90%;
+            align-items: center;
+            /* padding-left: 15px; */
+            padding: 0 15px;
+            flex-direction: row;
+        }
+
+        .media-library__upload-buttons {
+
+        }
+
+        .media-library__scale {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .media-library__scale-range.range {
+            position: relative;
+            /* top: 16px; */
+            width: auto;
+            top: auto;
+            /* right: 94px; */
+            left: 20px;
+            /* height: 100%; */
+            /* width: 12%; */
+        }
+    }
+
+    .media-library__content {
+        top: 60px;
+    }
+}
+
+.media__gallery .gallery__content {
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    height: calc(100% - 60px) !important;
+    /* height: 100%; */
+    //margin-top: 60px !important;
+    //margin-bottom: 0 !important;
+    padding: 0 !important;
+}
+
+.media_browser_dialog .p-jumper__help {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.media__gallery .media-library__content {
+    top: 0 !important;
+}
+
+.media_browser_dialog .dialog__content .media__gallery {
+    height: calc(100% - 50px) !important;
+    top: 0;
+}
+
+.c-search__container {
+	.c-search {
+		height: calc(100% - 60px);
+	}
+	.footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 60px;
+		z-index: 999;
+		background: #f1f1f1;
+		display: flex;
+		align-items: center;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+		padding: 0 30px;
+	}
+}
+
+.c-search_modal:not(.c-search_modal--primarysearch)>.popover {
+	right: 175px !important;
+	left: 175px !important;
+	top: 50px !important;
+	bottom: 50px !important;
+}

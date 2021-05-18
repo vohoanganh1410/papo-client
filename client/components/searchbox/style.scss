@@ -1,0 +1,108 @@
+#search_container{
+    // flex:1;
+    position:relative;
+    z-index:0;
+    margin:0 7px 0 0;
+    min-width:0
+}
+
+ .search_form{
+	 background: #fff;
+    display:flex;
+    align-items:center;
+    padding:2px 0;
+    height:26px;
+    border-radius:.35rem;
+    border:1px solid #919193
+}
+ .search_form:hover{
+    border-color:#717274
+}
+ .search_focused .search_form{
+    border-color:#717274;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075)
+}
+ #search_container .search_input{
+    flex:1;
+    -webkit-transition:width .15s ease-out 0s;
+    -moz-transition:width .15s ease-out 0s;
+    transition:width .15s ease-out 0s;
+    font-size:15px;
+    height:auto;
+    padding-left:0!important;
+    padding-right:0!important;
+    padding-top:0;
+    padding-bottom:0;
+    margin:0;
+    border:none;
+    border-radius:0;
+    display:block;
+    height: 30px;
+}
+ #search_container .search_input.focus,#search_container .search_input:focus,#search_container .search_input:hover{
+    box-shadow:none
+}
+ #search_container .search_input:focus{
+    outline:0
+}
+ .icon_search_wrapper,.search_clear_icon_wrapper{
+    width:30px;
+    flex:none
+}
+ #search_container .icon_search{
+    flex:none;
+    top:0;
+    left:0;
+    z-index:1;
+    margin-left:5px;
+    text-shadow:none;
+    opacity:1;
+    -moz-opacity:1;
+    -khtml-opacity:1;
+    width:17px;
+    height:17px;
+    line-height:17px;
+    position:static;
+    color:#717274
+}
+ #search_spinner,.icon_search,.search_clear_icon{
+    width:17px;
+    height:17px;
+    display:block;
+    margin:0 auto
+}
+ #search_spinner{
+    color:#2c2d30
+}
+ .search_clear_icon{
+    display:none
+}
+ .search_clear_icon .ts_icon_times_small{
+    color:#717274;
+    position:relative;
+    top:-1px
+}
+ .search_clear_icon:hover{
+    text-decoration:none
+}
+ .search_form.active .search_clear_icon{
+    display:block
+}
+ .search_input_wrapper{
+    font-size:15px;
+    display:flex;
+    align-items:baseline;
+    flex:1;
+    min-width:0
+}
+
+.comPlainTextContentEditable {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+
+.comPlainTextContentEditable__has_placeholder::before {
+  content: attr(placeholder);
+  opacity: 0.5;
+  color: inherit;
+  cursor: text;
+}

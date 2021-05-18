@@ -1,0 +1,60 @@
+.replies_chart {
+	text-align: center;
+}
+.pie_infographic_container {
+	display: flex;
+}
+.pie_graph {
+	flex: 1;
+}
+.pie_legend {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+.pie_graph__legend_item {
+	height: 24px;
+	cursor: pointer;
+}
+.customers_zone {
+	display: flex;
+	flex-direction: row;
+
+	.ex__info {
+		padding: 0 15px;
+	}
+}
+.submit_note_btn {
+	position: absolute;
+	right: 22px;
+	top: 70px;
+	padding: 5px 10px;
+	color: #717274 !important;
+}
+#note_content {
+	padding-right: 75px;
+}
+.note_item {
+	position: relative;
+	cursor: pointer;
+	border-top: 1px solid rgba(0,0,0,.09);
+	border-right: 1px solid rgba(0,0,0,.1);
+	border-left: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid rgba(0,0,0,.12);
+	border-radius: 6px;
+	font-size: 15px;
+	line-height: 18px;
+	margin-bottom: 10px;
+	color: #2c2d30;
+	padding: 12px 25px 12px 12px;
+
+	.note_creator {
+		color: #2c2d30!important;
+		font-weight: 900!important;
+	}
+
+	.created_time {
+		font-size: 13px;
+		color: #717274;
+	}
+}

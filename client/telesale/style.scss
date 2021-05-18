@@ -1,0 +1,52 @@
+.order-navigation__general-info {
+	padding-right: 0;
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+
+	@include breakpoint( '<480px' ) {
+		.section-nav__mobile-header {
+			display: none;
+		}
+	}
+}
+
+.order-navigation,
+.is-section-telesale .media-library__filter-bar {
+    .section-nav__panel {
+        height: 55px;
+    }
+}
+
+.order-navigation__tab {
+	// padding: 16px;
+}
+
+.order-navigation__actions {
+	display: flex;
+	padding: 11px 16px;
+
+	.button-group {
+		margin-right: 16px;
+	}
+}
+
+.order-content {
+	position: fixed;
+    -webkit-overflow-scrolling: touch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 0;
+    margin-top: 47px;
+    left: 321px; // need to get sizebar width
+    right: 0;
+    bottom: 0;
+}

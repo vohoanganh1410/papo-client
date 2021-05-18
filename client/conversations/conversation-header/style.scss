@@ -1,0 +1,139 @@
+
+.conversation_header {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+    display: flex;
+    align-items: center;
+	background: #fff;
+	box-sizing: border-box;
+	//border-bottom: 1px solid rgba( 0, 0, 0, 0.1 );
+	border-left: 1px solid rgba( 0, 0, 0, 0.1 );
+	height: 54px;
+
+	.conversation__actions {
+		display: flex;
+		align-items: center;
+	}
+
+	.search_form {
+		background: #fff;
+	}
+
+	.from__zone {
+		display: flex;
+		align-items: center;
+
+		.ex__info {
+			padding-left: 10px;
+
+			.from {
+				font-weight: 900;
+			    color: #2c2d30;
+			}
+
+			.info {
+				color: #717274;
+			    font-size: 13px;
+			    line-height: 15px;
+				margin-top: 2px;
+			}
+		}
+	}
+
+	.blue_on_hover:hover {
+		color: #0576b9;
+	}
+}
+
+.conversation_header_info_item {
+	display: flex;
+	white-space: nowrap;
+	margin-right: 6px;
+
+	&::before {
+		padding-right: 6px;
+		color: rgba( 97, 96, 97, 0.5 );
+		content: '|';
+		align-self: center;
+	}
+
+	button {
+		color: #616061;
+		font-size: 13px;
+	}
+
+	.info_icon {
+		line-height: 0.9;
+		font-size: 13px;
+		//display: inline-block;
+
+		&::before {
+			font-size: 13px;
+		}
+	}
+}
+
+.conversation-header__panel {
+	box-sizing: border-box;
+	width: 100%;
+    height: 53px;
+	display: flex;
+	align-items: center;
+
+	&:first-child {
+		width: 0;
+		flex: 1 0 auto;
+		margin-left: 15px;
+	}
+
+	//@include breakpoint( "<480px" ) {
+	//	.conversation-header.is-open & {
+	//		padding-bottom: 15px;
+	//		border-top: solid 1px $gray-lighten-20;
+	//		background: linear-gradient(to bottom, $gray-light 0%, $white 4px);
+	//	}
+	//}
+
+	//@include breakpoint( ">480px" ) {
+	//	display: flex;
+	//	align-items: center;
+	//
+	//	&:first-child {
+	//		width: 0;
+	//		flex: 1 0 auto;
+	//		margin-left: 15px;
+	//	}
+	//}
+}
+
+.conversation_header_icon {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	line-height: 1;
+	margin-left: 1px;
+	color: #717274;
+	border-radius: 4px;
+}
+
+.conversation_header_icon:focus {
+	outline: 0;
+}
+
+.from_title_meta {
+	display: flex;
+	align-items: center;
+	color: #a1a1a1;
+	font-weight: 400;
+	font-size: 14px;
+}
+.black_and_bold {
+	font-weight: 900 !important;
+	color: #2c2d30 !important;
+}
+
+.search_container {
+	//display: block;
+}

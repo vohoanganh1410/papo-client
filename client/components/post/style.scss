@@ -1,0 +1,173 @@
+.post {
+	display: flex;
+	flex-direction: row;
+	font-size: 14px;
+	//padding: 15px 0;
+
+	@include breakpoint( '<660px' ) {
+		margin: 0 15px;
+	}
+
+	&.placeholder {
+		.post_picture,
+		.post_item__post_title,
+		.post_item__post_text,
+		.post_item__post_text_extra_line,
+		.post_item__post_text_bottom_line,
+		.post_item__post_time {
+			@include placeholder();
+			border-radius: 3px;
+		}
+
+		.post_item__post_title {
+			max-width: 60%;
+			line-height: 18px;
+		}
+
+		.post_item__post_text {
+			max-width: 80%;
+		}
+
+		.post_item__post_text_bottom_line {
+			max-width: 40%;
+			margin-top: -1px;
+		}
+
+		.post_item__post_time {
+			width: 20px;
+			height: 20px;
+
+			@include breakpoint( '>660px' ) {
+				width: 16px * 1.5 * 3;
+			}
+		}
+
+		.post_picture {
+			width: 100px;
+			height: auto;
+			max-height: 100px;
+			object-fit: cover;
+			border-radius: 3px;
+			margin: 2px 12px 0 0;
+		}
+	}
+}
+
+.truncate_fade {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 18px;
+	background: #fff;
+	:global { background: -webkit-gradient( linear, left bottom, left top, color-stop( 0, #fff ), color-stop( 1, rgba( 255, 255, 255, 0 ) ) ) }
+	:global { background: -moz-linear-gradient(center bottom,#fff 0,rgba(255,255,255,0) 100%) }
+	:global { background: -ms-linear-gradient(bottom,#fff,rgba(255,255,255,0)) }
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255, 255, 255, 0)', endColorstr='#ffffff', GradientType=0);
+	pointer-events: none;
+	z-index: 1;
+}
+
+.post_item__post_text_extra_line {
+	margin: 4px 0;
+}
+
+.post_item__post_text {
+	margin: 3px 0;
+	//max-width: 80%;
+}
+
+.post_item__byline {
+	color: var( --color-neutral-600 );
+	margin-right: 16px;
+	flex: 1 1 0;
+}
+
+.post_item__post_text,
+.post_item__post_text_bottom_line,
+.post_item__post_text_extra_line {
+	display: block;
+	max-height: 16px * 5;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	width: 100%;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	white-space: pre-line;
+
+	&:not( .placeholder )::after {
+		@include long-content-fade( $size: 20% );
+		height: 16px * 1.3;
+		top: auto;
+	}
+}
+
+.post_picture {
+	width: 100px;
+	height: auto;
+	max-height: 100px;
+	object-fit: cover;
+	border-radius: 3px;
+	margin: 2px 12px 0 0;
+	
+	&.has_no_picture {
+		display: none;
+	}
+}
+
+//.post_item__post_title {
+//	&:not( .placeholder ) {
+//		display: none;
+//	}
+//}
+
+.post_time {
+	color: #616061;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.post_action_icon {
+	&::before {
+		font-size: 18px;
+	}
+}
+
+.post_time_icon {
+	width: 14px;
+	height: 14px;
+	margin-right: 5px;
+
+	&::before {
+		font-size: 13px;
+	}
+}
+
+.post_item__post_text_bottom_line {
+	display: inline;
+	margin-right: 8px;
+	overflow: hidden;
+	position: relative;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	width: initial;
+	max-height: 16px * 1.3;
+
+	@include breakpoint( '<960px' ) {
+		height: 20px;
+		flex: 1 1 auto;
+		max-width: none;
+	}
+
+	@include breakpoint( '<660px' ) {
+		flex: 0 1 auto;
+	}
+
+	@include breakpoint( '<480px' ) {
+		flex: 1 1 auto;
+		max-width: none;
+	}
+}

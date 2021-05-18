@@ -1,0 +1,18 @@
+.post-time {
+	display: inline-block;
+	line-height: 1;
+
+	&::first-letter {
+		text-transform: capitalize;
+	}
+
+	&.is-placeholder {
+		@include placeholder;
+	}
+	.time {
+		line-height: 16px;
+	}
+}
+.last-assigned-time {
+	padding-left: 10px;
+}
