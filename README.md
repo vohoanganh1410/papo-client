@@ -8,7 +8,7 @@ This project is client side for Papo. An open source CMR for building modern rea
 
 ## Getting Started
 
-Before you can run this app, you must start MongoDB, [Papo Server](https://github.com/enesyteam/papo-server).
+Before you can run this app, you must start MongoDB, [Papo Server](https://github.com/vohoanganh1410/papo-client).
 Getting up and running is as easy as 1, 2, 3 and 4.
 
 1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed. MongoDB are running.
